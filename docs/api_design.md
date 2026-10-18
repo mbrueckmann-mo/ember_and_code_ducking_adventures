@@ -857,7 +857,7 @@ When exceeded, the API returns `429 Too Many Requests` with a `Retry-After` head
 |---------|------------|-----------------------------------------------------------|
 | 1.0.0   | 2026-10-18 | Initial release — Users, Ducks, Journeys, Achievements    |
 
-
+/*
 | Section | Endpoints |
 | --- | --- |
 | **Auth** | Register, Login, Refresh, Logout |
@@ -867,3 +867,4 @@ When exceeded, the API returns `429 Too Many Requests` with a `Retry-After` head
 | **Achievements** | Catalog browse, unlock check, reward claim, leaderboard |
 | **Webhooks** | 7 event types, HMAC-SHA256 payload signing |
 | **Rate Limiting** | Tiered limits with standard headers |
+*/

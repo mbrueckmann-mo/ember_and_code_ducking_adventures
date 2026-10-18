@@ -677,3 +677,21 @@ Database rollbacks follow the **expand-contract pattern** — destructive column
 | TLS             | Transport Layer Security — encryption protocol for network traffic          |
 | WAF             | Web Application Firewall — filters malicious HTTP traffic                  |
 | VPC             | Virtual Private Cloud — isolated AWS network environment                    |
+
+/*
+| Section | Highlights |
+| --- | --- |
+| **System Architecture** | ASCII topology diagram + end-to-end request flow |
+| **Tech Stack** | Node.js 22/Fastify/Drizzle/Postgres/Redis/SQS — each with rationale |
+| **Service Layer** | Modular monorepo, 4 domain services + Webhook Worker, internal comms pattern |
+| **Data Layer** | Per-domain schemas, JSONB strategy, append-only quack ledger, read replica routing |
+| **Auth & Security** | RS256 JWT flow, Redis blocklist revocation, 9-layer security table |
+| **Caching** | 10 cache key patterns with TTLs, invalidation strategy, cache-aside pattern |
+| **Media** | S3 + CloudFront, direct upload via pre-signed URLs, immutable asset versioning |
+| **Webhooks** | SNS→SQS event bus, retry/backoff/DLQ, replay-protection headers |
+| **Infrastructure** | Multi-AZ VPC layout, ECS Fargate sizing, autoscaling config |
+| **Observability** | Structured logging, 6 metrics, distributed tracing, 7 alerts, 6 dashboards |
+| **Resilience** | Idempotency, circuit breakers, graceful degradation table |
+| **CI/CD** | Full pipeline from ``feature/*`` to production with approval gate |
+| **ADRs** | 4 decision records covering the most consequential design choices |
+*/
