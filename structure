@@ -1,0 +1,7 @@
+ember_and_code_ducking_adventures/
+│
+├── frontend/        # Website UI (HTML, CSS, JS)
+├── backend/         # API, server-side logic, database connection
+├── database/        # SQL Server schema, seed data, diagrams
+├── docs/            # Architecture, API design, UI notes, roadmap
+└── README.md        # Project documentation
